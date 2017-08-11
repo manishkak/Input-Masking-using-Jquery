@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+<title>Test Input Masking</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+
+<script>
+$(document).ready(function($){
+	$('#phone').mask('999-999-9999', {placeholder:'xxx-xxx-xxxx'});
+
+});
+</script>
+</head>
+<body>
+<form action="">
+  
+<input type='text' name='phone' id='phone' placeholder="enter phone no.">
+
+</form>
+<!--
+<input type="text" name="theName" placeholder="Please enter your phone number"
+  onblur="if(this.placeholder!==''){ this.value='Please enter your phone number'; this.style.color='#BBB';}"
+  onfocus="if(this.placeholder=='Please enter your phone number'){ this.value='___-___-____'; this.style.color='#000';}"
+  style="color:#BBB;" /><br>
+-->
+</body>
+</html>
